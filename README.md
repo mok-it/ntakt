@@ -15,14 +15,20 @@ Make sure you have node.js and pnpm installed on your system.
    ```bash
     cd ntakt
     ```
-3. Install the required dependencies:
+   
+3. Install pnpm, if it's not installed yet:
+
+   ```bash
+   npm install -g pnpm
+   ```
+4. Install the required dependencies:
 
     ```bash
     pnpm install
     ```
 
-4. Set the .env file's 2 variables: the site's URL and the path to the Excel file
-5. Run the main.ts file:
+5. Set the .env file's 2 variables: the site's URL and the path to the Excel file
+6. Run the main.ts file:
     ```bash
     pnpm tsx main.ts
     ```
@@ -47,3 +53,4 @@ Your Excel sheet should have the following columns:
 - The tool currently does not fill nationality, as it would be an overkill, and is defaulted to Hungarian. If you need to fill it, you can do so manually on the NTAK site. 
 - The site is slow as heck, so it might be required to manually check the filled data.
 - In some cases, the gender gets misfilled
+- The tool doesn't handle room numbers, as in our experience, the camp's owner doesn't care about it too much either.
